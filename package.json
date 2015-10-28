@@ -1,0 +1,25 @@
+{
+  "name": "dream-journal",
+  "version": "1.0.0",
+  "description": "An application to store and sort dreams",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DjLehnen/Dream-Journal.git"
+  },
+  "author": "Daniel Lehnen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DjLehnen/Dream-Journal/issues"
+  },
+  "homepage": "https://github.com/DjLehnen/Dream-Journal#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.2.3"
+  }
+}
