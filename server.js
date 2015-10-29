@@ -3,6 +3,10 @@ var server = express();
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 
+mongoose.connect("mongodb://localhost/dreamdatabase");
+
+server.use(bodyParser.json());
+server.use(bodyParser.urlencoded({extended: true}));
 server.use(express.static(__dirname+"/public"));
 
 server.get ("/", function(req, res){
