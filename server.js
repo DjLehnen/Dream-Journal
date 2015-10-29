@@ -13,6 +13,19 @@ server.get ("/", function(req, res){
     res.sendFile("/public/index.html");
 });
 
+//find dream
+server.get("api/dreams", function(req, res){
+
+});
+
+//make dream
+server.post("api/dreams", function(req, res){
+    var dream = new Dream({
+      
+    });
+});
+
+
 server.listen(8008,function(){
     console.log("Now listening to the voices in my 8008");
 });
