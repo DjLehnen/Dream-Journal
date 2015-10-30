@@ -2,6 +2,10 @@
   background-color: black;
 }
 
+hr{
+  width: 70%;
+}
+
 .text-color-gray{
   color: #888888;
 }
