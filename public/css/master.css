@@ -2,6 +2,10 @@
   background-color: black;
 }
 
+.text-color-gray{
+  color: #888888;
+}
+
 .topSpacing{
   margin-top: 52px;
 }
