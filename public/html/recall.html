@@ -1,1 +1,7 @@
-<h1>This page will give you the desired dream</h1>
+<div class="container well" ng-repeat = "dream in dreams">
+  <h1>{{dream.title}}</h1>
+  <p>{{dream.characters}}</p>
+  <p>{{dream.locations}}</p>
+  <p>{{dream.events}}</p>
+  <button class="btn btn-warning">X</button>
+</div>

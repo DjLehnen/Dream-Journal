@@ -17,16 +17,22 @@ server.get ("/", function(req, res){
 
 //find dream
 server.get("/api/dreams", function(req, res){
+  Dream.find({}, function(err, dreams){
+      if(err){
+          console.error(err);
+      }
 
+      res.json(dreams);
+  });
 });
 
 //make dream
 server.post("/api/dreams", function(req, res){
     var dream = new Dream({
-      Title: req.body.title,
-      Characters: req.body.characters,
-      Locations: req.body.locations,
-      Events: req.body.events
+      title: req.body.title,
+      characters: req.body.characters,
+      locations: req.body.locations,
+      events: req.body.events
     });
 
       dream.save(function(err){

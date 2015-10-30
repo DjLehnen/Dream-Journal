@@ -24,20 +24,13 @@ angular.module("ngDreams")
 
         });
 
-angular.module("ngDreams")
-        .controller("DreamController", function($scope, $http){
-          $scope.dreamData = {};
-
-          $scope.createDream = function(){
-            $http.post("/api/dreams", $scope.dreamData)
-              .then(function(response){
-                console.log(response);
-                $scope.dreamData = {};
-              });
-          };
-        });
 
 angular.module("ngDreams")
         .controller("RecallController", function($scope, $http){
-
+            $scope.dreams = [];
+            $http.get("/api/dreams")
+                .then(function(response){
+                  $scope.dreams = response.data;
+                  console.log($scope.dreams);
+                });
         });
