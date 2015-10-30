@@ -33,4 +33,13 @@ angular.module("ngDreams")
                   $scope.dreams = response.data;
                   console.log($scope.dreams);
                 });
+            $scope.removeDream = function(dream){
+              $http.delete("/api/dreams/" + dream._id)
+                .then(function(dream){
+                  $http.get("/api/dreams")
+                    .then(function(response){
+                       $scope.dreams = response.data;
+                    });
+                  });
+            };
         });

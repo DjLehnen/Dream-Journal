@@ -43,6 +43,15 @@ server.post("/api/dreams", function(req, res){
       });
 });
 
+// delete dream
+server.delete("/api/dreams/:id", function(req, res){
+  Dream.findByIdAndRemove(req.params.id, function(err){
+    if(err){
+      console.log(err);
+    }
+    res.json("It is forgotten.");
+  });
+});
 
 server.listen(8008,function(){
     console.log("Now listening to the voices in my 8008");

@@ -1,7 +1,7 @@
 <div class="container well" ng-repeat = "dream in dreams">
   <h1>{{dream.title}}</h1>
-  <p>{{dream.characters}}</p>
-  <p>{{dream.locations}}</p>
-  <p>{{dream.events}}</p>
-  <button class="btn btn-warning">X</button>
+  <h3>Characters: {{dream.characters}}</h3>
+  <h3>Locations: {{dream.locations}}</h3>
+  <h3>Events: {{dream.events}}</h3>
+  <button class="btn btn-danger" ng-click = "removeDream(dream)">Delete</button>
 </div>
