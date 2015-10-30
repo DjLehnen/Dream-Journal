@@ -1,18 +1,18 @@
 <div class="container text-color-gray">
-    <form class="col-md-8" ng-submit = "createDream()">
-        <div class="form-group">
+    <form class="col-md-8 backdrop" ng-submit = "createDream()">
+        <div class="form-group well">
             <label for="Dream Title">Dream Title:</label>
             <input type="text" class="form-control" placeholder="If this dream were a book, what would you call it?" ng-model="dreamData.title">
         </div>
-        <div class="form-group">
+        <div class="form-group well">
             <label for="Notable Characters">Notable Characters:</label>
             <input type="text" class="form-control" placeholder="What sort of creatures played roles in this dream?" ng-model="dreamData.characters">
         </div>
-        <div class="form-group">
+        <div class="form-group well">
             <label for="Locations">Locations:</label>
             <input type="text" class="form-control" placeholder="What was the setting like?" ng-model="dreamData.locations">
         </div>
-        <div class="form-group">
+        <div class="form-group well">
             <label for="Events">Events:</label>
             <input type="text" class="form-control" placeholder="What happened?" ng-model="dreamData.events">
         </div>
