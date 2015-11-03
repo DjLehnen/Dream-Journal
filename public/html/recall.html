@@ -1,14 +1,10 @@
-<!-- <div class="container well wrapIt" ng-repeat = "dream in dreams">
+
+<div class="container well wrapIt" dir-paginate="dream in dreams | itemsPerPage: 10">
   <h1><strong> {{dream.title}} </strong></h1>
   <h3> {{dream.events}} </h3>
-  <button class="btn btn-danger" ng-click = "removeDream(dream)">Delete</button>
-</div> -->
+  <button class="btn btn-danger" ng-click = "removeDream(dream)">Forget</button>
+</div>
 
-<ul>
-    <li dir-paginate="dream in dreams | itemsPerPage: 10">
-      <h1><strong> {{dream.title}} </strong></h1>
-      <h3> {{dream.events}} </h3>
-    </li>
-</ul>
+
 
 <dir-pagination-controls></dir-pagination-controls>
