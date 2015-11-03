@@ -2,6 +2,10 @@
   background-color: black;
 }
 
+.tall{
+  height: 200px;
+}
+
 hr{
   width: 70%;
 }
@@ -12,10 +16,14 @@ hr{
   border-color: darkblue;
 }
 
+.wrapIt{
+  word-wrap:break-word;
+}
+
 .text-color-gray{
   color: #888888;
 }
 
 .topSpacing{
-  margin-top: 52px;
+  margin-top: 60px;
 }

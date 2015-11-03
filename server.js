@@ -30,8 +30,6 @@ server.get("/api/dreams", function(req, res){
 server.post("/api/dreams", function(req, res){
     var dream = new Dream({
       title: req.body.title,
-      characters: req.body.characters,
-      locations: req.body.locations,
       events: req.body.events
     });
 
