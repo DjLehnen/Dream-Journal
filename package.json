@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/DjLehnen/Dream-Journal#readme",
   "dependencies": {
+    "angular-utils-pagination": "^0.9.2",
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
     "mongoose": "^4.2.3"

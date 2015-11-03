@@ -1,4 +1,4 @@
-angular.module("ngDreams", ["ngRoute"]);
+angular.module("ngDreams", ["ngRoute","angularUtils.directives.dirPagination"]);
 
 angular.module("ngRoute")
         .config(function($routeProvider){
@@ -23,4 +23,3 @@ angular.module("ngDreams")
         .controller("HomeController", function($scope){
 
         });
-        
